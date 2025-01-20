@@ -6,13 +6,13 @@ const ViewMenu = ({}) => {
   return (
     <Button
       asChild
-      className="z-50 flex aspect-square h-24 flex-col items-center justify-center rounded-full bg-[#1D1D1D] px-0 py-0 text-center text-xs uppercase text-[#8F8F8F] hover:bg-[#1D1D1D]"
+      className="z-50 flex aspect-square h-24 flex-col items-center justify-center rounded-full bg-[#0C1213] px-0 py-0 text-center text-xs uppercase text-[#8F8F8F] hover:bg-[#1D1D1D]"
     >
       <Link href="/table-booking">
         <Icons.dining color="#8F8F8F" />
-        Table
+        View
         <br />
-        Booking
+        Menu
       </Link>
     </Button>
   );
