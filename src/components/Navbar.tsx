@@ -41,22 +41,22 @@ const Navbar = ({
             width={140}
             height={120}
             alt="logo"
-            className="w-24"
+            className="w-20"
           />
         </Link>
         {!isScrolled && (
           <div className="hidden w-full flex-row items-center gap-[3.48rem] md:flex">
-            <div className="flex flex-row items-center justify-between gap-40 pt-6">
+            <div className="flex w-full items-center justify-between lg:pt-4">
               <Link href="/">
                 <Image
                   src="/images/hero/logo.png"
                   width={140}
                   height={120}
                   alt="logo"
-                  className="w-28"
+                  className="w-36"
                 />
               </Link>
-              <div className="flex flex-row">
+              <div className="flex flex-grow flex-row items-center justify-end gap-0">
                 <div
                   className={cn(
                     "flex w-fit items-center justify-center gap-6 border border-[#AF8032] bg-transparent pl-6",
@@ -77,7 +77,6 @@ const Navbar = ({
                   >
                     <Link href="/">ABOUT</Link>
                   </Button>
-
                   <Button
                     asChild
                     variant="link"
@@ -104,7 +103,7 @@ const Navbar = ({
                   <Button
                     asChild
                     variant="link"
-                    className="font-poppins rounded-none bg-[#AF8032] py-10 text-center text-base font-[500] uppercase tracking-[3px] text-[#fff]"
+                    className="font-poppins rounded-none bg-[#AF8032] px-10 py-[41px] text-center text-base font-[500] uppercase tracking-[3px] text-[#fff]"
                   >
                     <Link href="/">book table</Link>
                   </Button>

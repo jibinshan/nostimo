@@ -12,14 +12,14 @@ const Hero: React.FC = () => {
         muted
         loop
       />
-      <div className="absolute bottom-10 left-4 lg:bottom-24 lg:left-[120px]">
+      <div className="absolute bottom-10 left-4 lg:bottom-16 lg:left-[120px]">
         <div className="flex flex-row gap-4">
           <Twitter className="h-8 w-8 text-[#AF8032]" />
           <Instagram className="h-8 w-8 text-[#AF8032]" />
           <Youtube className="h-8 w-8 text-[#AF8032]" />
         </div>
       </div>
-      <div className="relative flex flex-col items-center justify-center gap-6">
+      <div className="lg: relative flex flex-col items-center justify-center gap-6">
         <h1 className="font-marcellus text-center text-5xl font-[400] uppercase tracking-[2.5px] text-[#CC850F] lg:text-9xl lg:leading-[110px]">
           Nostimo <br />
           London

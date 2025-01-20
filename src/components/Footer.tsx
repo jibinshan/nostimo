@@ -13,11 +13,11 @@ const Footer = ({}) => {
           <div className="w-full border-t-[1px] border-t-[#A59982] lg:w-[45%]"></div>
           <div>
             <Image
-              src="/images/hero/logo.png"
+              src="/images/hero/f-logo.png"
               width={140}
               height={120}
               alt="logo"
-              className="w-24"
+              className="w-36"
             />
           </div>
           <div className="w-full border-t-[1px] border-t-[#A59982] lg:w-[45%]"></div>
@@ -63,10 +63,42 @@ const Footer = ({}) => {
           </Button>
         </div>
         <div className="flex flex-row items-center justify-center gap-4">
-          <Instagram className="h-8 w-8 text-[#A59982]" />
-          <Instagram className="h-8 w-8 text-[#A59982]" />
-          <Chrome className="h-8 w-8 text-[#A59982]" />
-          <Facebook className="h-8 w-8 text-[#A59982]" />
+          <Link href={"#"}>
+            <Image
+              src="/images/footer/insta.svg"
+              width={42}
+              height={42}
+              alt="logo"
+              className="w-14"
+            />
+          </Link>
+          <Link href={"#"}>
+            <Image
+              src="/images/footer/view.svg"
+              width={42}
+              height={42}
+              alt="logo"
+              className="w-14"
+            />
+          </Link>
+          <Link href={"#"}>
+            <Image
+              src="/images/footer/google.svg"
+              width={42}
+              height={42}
+              alt="logo"
+              className="w-14"
+            />
+          </Link>
+          <Link href={"#"}>
+            <Image
+              src="/images/footer/fb.svg"
+              width={42}
+              height={42}
+              alt="logo"
+              className="w-14"
+            />
+          </Link>
         </div>
         <div className="flex flex-col items-center justify-center gap-2">
           <h5 className="font-marcellus text-center text-base font-[400] tracking-[0.96px] text-[#A59982]">

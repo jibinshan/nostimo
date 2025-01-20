@@ -20,7 +20,7 @@ const Gallery: React.FC = () => {
             width={356}
             height={356}
             alt="frame"
-            className="h-[250px] w-[300px] object-cover"
+            className="h-full w-full object-cover lg:h-[250px] lg:w-[300px]"
           />
         </div>
         <div>
@@ -29,7 +29,7 @@ const Gallery: React.FC = () => {
             width={356}
             height={356}
             alt="frame"
-            className="h-[250px] w-[300px] object-cover"
+            className="h-full w-full object-cover lg:h-[250px] lg:w-[300px]"
           />
         </div>
         <div>
@@ -38,7 +38,7 @@ const Gallery: React.FC = () => {
             width={356}
             height={356}
             alt="frame"
-            className="h-[250px] w-[300px] object-cover"
+            className="h-full w-full object-cover lg:h-[250px] lg:w-[300px]"
           />
         </div>
         <div>
@@ -47,7 +47,7 @@ const Gallery: React.FC = () => {
             width={356}
             height={356}
             alt="frame"
-            className="h-[250px] w-[300px] object-cover"
+            className="h-full w-full object-cover lg:h-[250px] lg:w-[300px]"
           />
         </div>
         <div>
@@ -56,7 +56,7 @@ const Gallery: React.FC = () => {
             width={356}
             height={356}
             alt="frame"
-            className="h-[250px] w-[300px] object-cover"
+            className="h-full w-full object-cover lg:h-[250px] lg:w-[300px]"
           />
         </div>
         <div>
@@ -65,7 +65,7 @@ const Gallery: React.FC = () => {
             width={356}
             height={356}
             alt="frame"
-            className="h-[250px] w-[300px] object-cover"
+            className="h-full w-full object-cover lg:h-[250px] lg:w-[300px]"
           />
         </div>
         <div>
@@ -74,7 +74,7 @@ const Gallery: React.FC = () => {
             width={356}
             height={356}
             alt="frame"
-            className="h-[250px] w-[300px] object-cover"
+            className="h-full w-full object-cover lg:h-[250px] lg:w-[300px]"
           />
         </div>
         <div>
@@ -83,7 +83,7 @@ const Gallery: React.FC = () => {
             width={356}
             height={356}
             alt="frame"
-            className="h-[250px] w-[300px] object-cover"
+            className="h-full w-full object-cover lg:h-[250px] lg:w-[300px]"
           />
         </div>
       </div>
