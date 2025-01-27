@@ -11,7 +11,9 @@ export default {
         inter: ["var(--font-inter)", ...fontFamily.sans],
         italiana: ["var(--font-italiana)", ...fontFamily.sans],
         playfair: ["var(--font-playfair)", ...fontFamily.sans],
-        saint: ["var(--font-saint)", ...fontFamily.sans]
+        saint: ["var(--font-saint)", ...fontFamily.sans],
+        poppins: ["var(--font-poppins)", ...fontFamily.sans],
+        marcellus: ["var(--font-marcellus)", ...fontFamily.sans],
       },
       borderRadius: {
         lg: "var(--radius)",
