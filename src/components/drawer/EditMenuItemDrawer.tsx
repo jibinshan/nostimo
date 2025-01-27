@@ -160,7 +160,7 @@ const EditMenuItemDrawer: FC<MenuItemPopupProps> = ({ children, item, index }) =
                     !item.images[0] && "h-[90%]",
                 )}>
                     <div className={cn("pt-48", !item.images[0] && "pt-0")}>
-                        <div className="rounded-md bg-menuforeground px-5 py-6">
+                        <div className="rounded-md bg-itembackground px-5 py-6">
                             {menuitem && (
                                 <div className="flex flex-col gap-2">
                                     <div className="z-40 flex w-full justify-between gap-2">
@@ -233,7 +233,7 @@ const EditMenuItemDrawer: FC<MenuItemPopupProps> = ({ children, item, index }) =
                     </div>
                     {menuitem?.modifiers.map((mod, index) => {
                         return (
-                            <div className="rounded-xl bg-menuforeground px-5 py-6" key={index}>
+                            <div className="rounded-xl bg-itembackground px-5 py-6" key={index}>
                                 <div className="flex flex-col gap-4 space-y-2">
                                     <div>
                                         <p className="w-full text-lg font-semibold text-itemdescription">

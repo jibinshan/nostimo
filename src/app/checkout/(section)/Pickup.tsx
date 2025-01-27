@@ -151,7 +151,7 @@ const Pickup = () => {
                                             <Input
                                                 placeholder="Name"
                                                 {...field}
-                                                className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                                                className="placeholder:text-menuprimary-foreground h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                                             />
                                         </FormControl>
                                         <FormMessage />
@@ -167,7 +167,7 @@ const Pickup = () => {
                                             <Input
                                                 placeholder="Phone Number"
                                                 {...field}
-                                                className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                                                className="placeholder:text-menuprimary-foreground h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                                             />
                                         </FormControl>
                                         <FormMessage />
@@ -183,7 +183,7 @@ const Pickup = () => {
                                             <Input
                                                 placeholder="Email ID"
                                                 {...field}
-                                                className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                                                className="placeholder:text-menuprimary-foreground h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                                             />
                                         </FormControl>
                                         <FormMessage />
@@ -231,7 +231,7 @@ const Pickup = () => {
                                     value={note}
                                     onChange={(e) => setNote(e.target.value)}
                                     rows={3}
-                                    className="border-none bg-[#0F0F0F] lg:w-4/5"
+                                    className="border-none bg-[#0F0F0F] lg:w-4/5 placeholder:text-menuprimary-foreground"
                                 />
                             </div>
                         </div>

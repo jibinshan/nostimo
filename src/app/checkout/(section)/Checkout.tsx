@@ -150,10 +150,10 @@ const Checkout = () => {
           >
             <Button
               className="w-fit p-0 text-[#FBEAD2] text-lg font-[500] tracking-[1px] hidden md:flex gap-2"
-              onClick={() => router.back()}
+              onClick={() => router.push('/menu')}
               variant="link"
             >
-              <MoveLeft /> <span>Back to Cart</span>
+              <MoveLeft /> <span>Back to Menu</span>
             </Button>
             <div className="flex w-full flex-col gap-3 border-b-[2px] border-[#131313] py-3 pb-5 lg:flex-row lg:items-center lg:justify-between">
               <p className="text-xl font-semibold text-[#7A7875]">
@@ -288,7 +288,7 @@ const Checkout = () => {
                   <div className="flex gap-2">
                     <Input
                       placeholder="Gift or discount code"
-                      className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                      className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] placeholder:text-menuprimary-foreground bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                     />
                     <Button className="h-12">Apply</Button>
                   </div>

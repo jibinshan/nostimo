@@ -154,7 +154,7 @@ const Delivery = () => {
                                             <Input
                                                 placeholder="Name"
                                                 {...field}
-                                                className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                                                className="placeholder:text-menuprimary-foreground h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                                             />
                                         </FormControl>
                                         <FormMessage />
@@ -170,7 +170,7 @@ const Delivery = () => {
                                             <Input
                                                 placeholder="Phone Number"
                                                 {...field}
-                                                className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                                                className="placeholder:text-menuprimary-foreground h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                                             />
                                         </FormControl>
                                         <FormMessage />
@@ -186,7 +186,7 @@ const Delivery = () => {
                                             <Input
                                                 placeholder="Email ID"
                                                 {...field}
-                                                className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                                                className="placeholder:text-menuprimary-foreground h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                                             />
                                         </FormControl>
                                         <FormMessage />
@@ -210,7 +210,7 @@ const Delivery = () => {
                                             <Input
                                                 placeholder="Building/House/flat No/floor"
                                                 {...field}
-                                                className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                                                className="placeholder:text-menuprimary-foreground h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                                             />
                                         </FormControl>
                                         <FormMessage />
@@ -226,7 +226,7 @@ const Delivery = () => {
                                             <Input
                                                 placeholder="City"
                                                 {...field}
-                                                className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                                                className="placeholder:text-menuprimary-foreground h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                                             />
                                         </FormControl>
                                         <FormMessage />
@@ -242,7 +242,7 @@ const Delivery = () => {
                                             <Input
                                                 placeholder="Pin code"
                                                 {...field}
-                                                className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                                                className="placeholder:text-menuprimary-foreground h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
                                             />
                                         </FormControl>
                                         <FormMessage />
@@ -259,7 +259,7 @@ const Delivery = () => {
                                             Add Note
                                         </FormLabel>
                                         <FormControl>
-                                            <Textarea rows={3} className="border-none bg-[#0F0F0F] lg:w-4/5" {...field} />
+                                            <Textarea rows={3} className="border-none bg-[#0F0F0F] lg:w-4/5 placeholder:text-menuprimary-foreground" {...field} />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
