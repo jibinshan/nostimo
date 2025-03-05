@@ -33,7 +33,7 @@ const FormValidation = z.object({
 
 type FormData = z.infer<typeof FormValidation>;
 
-const Contact = ({ }) => {
+const Contact = ({}) => {
   const form = useForm<FormData>({
     resolver: zodResolver(FormValidation),
     defaultValues: {
@@ -67,33 +67,46 @@ const Contact = ({ }) => {
   });
 
   return (
-    <section className="flex flex-col h-full w-full items-center justify-center bg-[#fff5e5]" id="contact">
-      <div className="flex h-full w-full max-w-[1300px] flex-col gap-[2.5rem] px-0 pl-0 md:px-2 py-12 md:py-24">
+    <section
+      className="flex h-full w-full flex-col items-center justify-center bg-[#fff]"
+      id="contact"
+    >
+      <div className="flex h-full w-full max-w-[1300px] flex-col gap-[2.5rem] px-0 py-12 pl-0 md:px-2 md:py-24">
         <div className="flex w-full flex-col lg:flex-row">
-          <div className="flex w-full flex-col bg-[#fff5e5] lg:w-1/2 px-6 lg:px-28 gap-8">
+          <div className="flex w-full flex-col gap-8 bg-[#] px-6 lg:w-1/2 lg:px-28">
             <div className="flex flex-col gap-8">
-              <p className="font-bai leading-[4px] text-lg">Contact Us</p>
-              <h1
-                className="text-4xl lg:text-5xl font-medium uppercase leading-[50px] tracking-[5px] font-forum">
-                Get in<br /> Touch</h1>
+              <p className="font-bai text-lg leading-[4px] text-[#4197D4]">
+                Contact Us
+              </p>
+              <h1 className="font-forum text-4xl font-medium uppercase leading-[50px] tracking-[5px] text-[#4197D4] lg:text-5xl">
+                Get in
+                <br /> Touch
+              </h1>
             </div>
             <div className="flex flex-col gap-8">
               <div className="flex gap-6">
                 <div>
-                  <div className="h-fit w-fit rounded-full  p-2">
-                    <MapPin />
+                  <div className="h-fit w-fit rounded-full p-2">
+                    <MapPin className="text-[#000]" />
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="https://maps.app.goo.gl/RcUh1as5zsmZng1AA" target="_blank">
-                    <p className="">
-                      45 Deansgate, Manchester M3<br /> 2AY, United Kingdom
+                  <Link
+                    href="https://maps.app.goo.gl/RcUh1as5zsmZng1AA"
+                    target="_blank"
+                  >
+                    <p className="text-[#000]">
+                      45 Deansgate, Manchester M3
+                      <br /> 2AY, United Kingdom
                     </p>
                   </Link>
-                  <Link href="https://maps.app.goo.gl/RcUh1as5zsmZng1AA" target="_blank">
-                    <p className="flex gap-2 text-sm items-center">
-                      <span>Get Direction</span>
-                      <ArrowRight />
+                  <Link
+                    href="https://maps.app.goo.gl/RcUh1as5zsmZng1AA"
+                    target="_blank"
+                  >
+                    <p className="flex items-center gap-2 text-sm">
+                      <span className="text-[#000]">Get Direction</span>
+                      <ArrowRight className="text-[#000]" />
                     </p>
                   </Link>
                 </div>
@@ -110,23 +123,36 @@ const Contact = ({ }) => {
               </div> */}
               <div className="flex items-center gap-6">
                 <div>
-                  <div className="h-fit w-fit rounded-full  p-2">
-                    <Mail />
+                  <div className="h-fit w-fit rounded-full p-2">
+                    <Mail className="text-[#000]" />
                   </div>
                 </div>
-                <div className="flex flex-col gap-4">
-                  <Link href="mailto:info@nurcafe.co.uk"
-                    className="">info@nurcafe.co.uk</Link>
+                <div className="flex flex-col gap-4 text-[#000]">
+                  <Link href="mailto:info@nurcafe.co.uk" className="">
+                    info@nurcafe.co.uk
+                  </Link>
                 </div>
               </div>
-              <div className="flex justify-start gap-4 items-center">
-                <Link href='https://www.instagram.com/nurcafemcr/?hl=en' target="_blank">
+              <div className="flex items-center justify-start gap-4">
+                <Link
+                  href="https://www.instagram.com/nurcafemcr/?hl=en"
+                  target="_blank"
+                  className="text-[#000]"
+                >
                   <Icons.instagram />
                 </Link>
-                <Link href='https://www.tripadvisor.com/Restaurant_Review-g187069-d28003565-Reviews-Nur_Cafe-Manchester_Greater_Manchester_England.html' target="_blank">
+                <Link
+                  href="https://www.tripadvisor.com/Restaurant_Review-g187069-d28003565-Reviews-Nur_Cafe-Manchester_Greater_Manchester_England.html"
+                  target="_blank"
+                  className="text-[#000]"
+                >
                   <Icons.unknown />
                 </Link>
-                <Link href='https://g.co/kgs/eEdUrdK' target="_blank">
+                <Link
+                  href="https://g.co/kgs/eEdUrdK"
+                  className="text-[#000]"
+                  target="_blank"
+                >
                   <Icons.google />
                 </Link>
                 {/* <Link href='https://www.facebook.com/Istanbulwoolton/'>
@@ -135,7 +161,7 @@ const Contact = ({ }) => {
               </div>
             </div>
           </div>
-          <div className="flex w-full flex-col bg-[#fff5e5] lg:w-1/2 lg:items-center lg:justify-center">
+          <div className="flex w-full flex-col bg-[#fff] lg:w-1/2 lg:items-center lg:justify-center">
             <div className="w-full px-3 lg:w-4/5 lg:px-0">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="h-full">
@@ -150,7 +176,7 @@ const Contact = ({ }) => {
                               <Input
                                 placeholder="First Name"
                                 {...field}
-                                className="h-12 rounded-xl bg-white"
+                                className="h-12 rounded-xl bg-[#4197D4] placeholder:text-[#fff]"
                               />
                             </FormControl>
                             <FormMessage />
@@ -166,7 +192,7 @@ const Contact = ({ }) => {
                               <Input
                                 placeholder="Phone"
                                 {...field}
-                                className="h-12 rounded-xl bg-white"
+                                className="h-12 rounded-xl bg-[#4197D4] placeholder:text-[#fff]"
                               />
                             </FormControl>
                             <FormMessage />
@@ -182,7 +208,7 @@ const Contact = ({ }) => {
                               <Input
                                 placeholder="Email"
                                 {...field}
-                                className="h-12 rounded-xl bg-white"
+                                className="h-12 rounded-xl bg-[#4197D4] placeholder:text-[#fff]"
                               />
                             </FormControl>
                             <FormMessage />
@@ -194,12 +220,14 @@ const Contact = ({ }) => {
                         name="message"
                         render={({ field }) => (
                           <FormItem className="w-full">
-                            <FormLabel>Reason for contacting (optional)</FormLabel>
+                            <FormLabel>
+                              Reason for contacting (optional)
+                            </FormLabel>
                             <FormControl>
                               <Textarea
                                 placeholder="Your Message"
                                 {...field}
-                                className="h-32 rounded-xl bg-white"
+                                className="h-32 rounded-xl bg-[#4197D4] placeholder:text-[#fff]"
                               />
                             </FormControl>
                             <FormMessage />
@@ -209,7 +237,12 @@ const Contact = ({ }) => {
                     </div>
                   </div>
                   <div className="flex w-full flex-col pt-7 lg:flex-row">
-                    <Button className="w-full font-bai rounded-2xl py-6 hover:bg-secondary" disabled={bookTableMutation.isPending}>Contact US</Button>
+                    <Button
+                      className="font-bai w-full rounded-2xl bg-[#4197D4] py-6 hover:bg-secondary"
+                      disabled={bookTableMutation.isPending}
+                    >
+                      Contact US
+                    </Button>
                   </div>
                 </form>
               </Form>
@@ -222,14 +255,24 @@ const Contact = ({ }) => {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="w-full h-[500px]"
+          className="h-[500px] w-full"
         ></iframe>
       </div>
-      <div className="w-full flex overflow-hidden">
-        <Image src='/images/home/herobottom.png' alt="bottom" width={966} height={96} />
-        <Image src='/images/home/herobottom.png' alt="bottom" width={966} height={96} />
+      <div className="flex w-full overflow-hidden">
+        <Image
+          src="/images/home/herobottom.png"
+          alt="bottom"
+          width={966}
+          height={96}
+        />
+        <Image
+          src="/images/home/herobottom.png"
+          alt="bottom"
+          width={966}
+          height={96}
+        />
       </div>
-    </section >
+    </section>
   );
 };
 

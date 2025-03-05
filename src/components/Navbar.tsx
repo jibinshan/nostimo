@@ -41,7 +41,7 @@ const Navbar = ({
             width={140}
             height={120}
             alt="logo"
-            className="w-20"
+            className="w-28"
           />
         </Link>
         {!isScrolled && (
@@ -59,42 +59,42 @@ const Navbar = ({
               <div className="flex flex-grow flex-row items-center justify-end gap-0">
                 <div
                   className={cn(
-                    "flex w-fit items-center justify-center gap-6 border border-[#AF8032] bg-transparent pl-6",
-                    pathname !== "/" && "bg-primary",
+                    "flex w-fit items-center justify-center gap-6 border border-[#4197D4] bg-transparent pl-6",
+                    pathname !== "/" && "bg-[#FFF]",
                   )}
                 >
                   <Button
                     asChild
                     variant="link"
-                    className="font-poppins rounded-none border-r-2 border-r-[#AF8032] py-10 text-center text-base font-[500] uppercase tracking-[3px] text-[#F5B956]"
+                    className="rounded-none border-r-2 border-r-[#4197D4] py-10 text-center font-poppins text-base font-[500] uppercase tracking-[3px] text-[#4197D4]"
                   >
                     <Link href="/">Menu</Link>
                   </Button>
                   <Button
                     asChild
                     variant="link"
-                    className="font-poppins rounded-none border-r-2 border-r-[#AF8032] py-10 text-center text-base font-[500] uppercase tracking-[3px] text-[#F5B956]"
+                    className="rounded-none border-r-2 border-r-[#4197D4] py-10 text-center font-poppins text-base font-[500] uppercase tracking-[3px] text-[#4197D4]"
                   >
                     <Link href="/">ABOUT</Link>
                   </Button>
                   <Button
                     asChild
                     variant="link"
-                    className="font-poppins rounded-none border-r-2 border-r-[#AF8032] py-10 text-center text-base font-[500] uppercase tracking-[3px] text-[#F5B956]"
+                    className="rounded-none border-r-2 border-r-[#4197D4] py-10 text-center font-poppins text-base font-[500] uppercase tracking-[3px] text-[#4197D4]"
                   >
                     <Link href="/">CULINARY GALLERY</Link>
                   </Button>
                   <Button
                     asChild
                     variant="link"
-                    className="font-poppins rounded-none border-r-2 border-r-[#AF8032] py-10 text-center text-base font-[500] uppercase tracking-[3px] text-[#F5B956]"
+                    className="rounded-none border-r-2 border-r-[#4197D4] py-10 text-center font-poppins text-base font-[500] uppercase tracking-[3px] text-[#4197D4]"
                   >
                     <Link href="/">CONTACT US</Link>
                   </Button>
                   <Button
                     asChild
                     variant="link"
-                    className="font-poppins rounded-none border-r-2 border-r-[#AF8032] py-10 text-center text-base font-[500] uppercase tracking-[3px] text-[#F5B956]"
+                    className="rounded-none border-r-2 border-r-[#4197D4] py-10 text-center font-poppins text-base font-[500] uppercase tracking-[3px] text-[#4197D4]"
                   >
                     <Link href="/">Contact</Link>
                   </Button>
@@ -103,7 +103,7 @@ const Navbar = ({
                   <Button
                     asChild
                     variant="link"
-                    className="font-poppins rounded-none bg-[#AF8032] px-10 py-[41px] text-center text-base font-[500] uppercase tracking-[3px] text-[#fff]"
+                    className="text-[#000 rounded-none bg-[#4197D4] px-10 py-[41px] text-center font-poppins text-base font-[500] uppercase tracking-[3px] text-[#000]"
                   >
                     <Link href="/">book table</Link>
                   </Button>

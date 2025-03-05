@@ -4,10 +4,10 @@ import React from "react";
 
 const Discover: React.FC = () => {
   return (
-    <section className="relative h-full w-full bg-[#0C1213] px-4 pb-40 pt-8 lg:px-[80px] lg:pt-40 2xl:px-[120px]">
+    <section className="relative h-full w-full bg-[#fff] px-4 pb-40 pt-8 lg:px-[80px] lg:pt-40 2xl:px-[120px]">
       <div className="absolute bottom-0 right-0 z-10">
         <div className="relative">
-          <div className="absolute -bottom-14 left-0 h-[50%] border-l-[1px] border-[#AF8032]"></div>
+          <div className="absolute -bottom-14 left-0 h-[50%] border-l-[1px] border-[#000]"></div>
           <Image
             src={"/images/discover/turkish.png"}
             width={649}
@@ -17,7 +17,7 @@ const Discover: React.FC = () => {
           />
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 z-10 w-[90%] border-b-[1px] border-[#AF8032]"></div>
+      <div className="absolute bottom-0 left-0 z-10 w-[90%] border-b-[1px] border-[#000]"></div>
 
       <div className="relative z-20 flex flex-col gap-4 lg:gap-8">
         <Image
@@ -27,17 +27,17 @@ const Discover: React.FC = () => {
           alt="nostimo"
           className="h-full w-full lg:pb-6"
         />
-        <h2 className="font-marcellus text-3xl font-[400] uppercase text-[#A59982] lg:text-5xl lg:leading-[1.50px]">
+        <h2 className="font-marcellus text-3xl font-[400] uppercase text-[#4197D4] lg:text-5xl lg:leading-[1.50px]">
           DISCOVER THE TASTE
         </h2>
-        <p className="w-full max-w-[470px] font-inter text-base font-[300] leading-[24px] tracking-[0.36px] text-[#A59982]">
+        <p className="w-full max-w-[470px] font-inter text-base font-[300] leading-[24px] tracking-[0.36px] text-[#000]">
           Made by Mediterranean kitchen lovers, for Mediterranean kitchen
           lovers. From our mouth-watering moussaka to our sumptuous souvlaki,
           we’re committed to tasty Greek fare. After all, Nostimo literally
           translates to ‘yummy’…
         </p>
         <div>
-          <Button className="font-poppins mt-2 rounded-none bg-[#A37426] px-7 py-6 text-base uppercase text-[#fff] lg:mt-0">
+          <Button className="mt-2 rounded-none bg-[#4197D4] px-7 py-6 font-poppins text-base uppercase text-[#fff] lg:mt-0">
             Book a table
           </Button>
         </div>

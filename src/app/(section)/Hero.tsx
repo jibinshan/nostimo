@@ -14,21 +14,21 @@ const Hero: React.FC = () => {
       />
       <div className="absolute bottom-10 left-4 lg:bottom-16 lg:left-[120px]">
         <div className="flex flex-row gap-4">
-          <Twitter className="h-8 w-8 text-[#AF8032]" />
-          <Instagram className="h-8 w-8 text-[#AF8032]" />
-          <Youtube className="h-8 w-8 text-[#AF8032]" />
+          <Twitter className="h-8 w-8 text-[#fff]" />
+          <Instagram className="h-8 w-8 text-[#fff]" />
+          <Youtube className="h-8 w-8 text-[#fff]" />
         </div>
       </div>
       <div className="lg: relative flex flex-col items-center justify-center gap-6">
-        <h1 className="font-marcellus text-center text-5xl font-[400] uppercase tracking-[2.5px] text-[#CC850F] lg:text-9xl lg:leading-[110px]">
+        <h1 className="text-center font-marcellus text-5xl font-[400] uppercase tracking-[2.5px] text-[#fff] lg:text-9xl lg:leading-[110px]">
           Nostimo <br />
           London
         </h1>
-        <p className="font-marcellus w-full max-w-[500px] text-center text-lg font-[400] uppercase tracking-[1px] text-[#fff] lg:text-xl lg:leading-[30px]">
+        <p className="w-full max-w-[500px] text-center font-marcellus text-lg font-[400] uppercase tracking-[1px] text-[#fff] lg:text-xl lg:leading-[30px]">
           A Haven of Greek-Mediterranean Gastronomy in the Heart of London
         </p>
         <div>
-          <Button className="font-poppins rounded-none bg-[#A37426] px-7 py-6 text-base font-[500] uppercase text-[#fff]">
+          <Button className="rounded-none bg-[#4197D4] px-7 py-6 font-poppins text-base font-[500] uppercase text-[#fff]">
             Order Now
           </Button>
         </div>

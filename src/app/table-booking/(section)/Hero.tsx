@@ -1,4 +1,4 @@
-const Hero = ({ }) => {
+const Hero = ({}) => {
   return (
     <section
       id="hero"
@@ -8,7 +8,7 @@ const Hero = ({ }) => {
           "linear-gradient(170deg, rgba(0, 0, 0, 0.00) 7.51%, rgba(0, 0, 0, 0.80) 92.93%), url(/images/table-booking/table.jpg) lightgray 50% / cover no-repeat",
       }}
     >
-      <h1 className="w-full text-center font-oswald text-[4.75rem] leading-[80%]">
+      <h1 className="font-oswald w-full text-center text-[4.75rem] leading-[80%] text-[#4197D4]">
         Table Booking
       </h1>
     </section>

@@ -3,13 +3,13 @@ import React from "react";
 
 const Explore: React.FC = () => {
   return (
-    <section className="h-full w-full bg-[#0C1213] px-4 py-12 lg:px-[80px] lg:py-20 2xl:px-[120px]">
+    <section className="h-full w-full bg-[#fff] px-4 py-12 lg:px-[80px] lg:py-20 2xl:px-[120px]">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-20">
-          <h1 className="font-marcellus text-3xl font-[400] uppercase tracking-[1.50px] text-[#A59982] lg:text-5xl lg:leading-[60px]">
+          <h1 className="font-marcellus text-3xl font-[400] uppercase tracking-[1.50px] text-[#4197D4] lg:text-5xl lg:leading-[60px]">
             Explore <br /> with us
           </h1>
-          <p className="w-full max-w-[650px] font-inter text-sm font-[300] leading-[20px] tracking-[0.30px] text-[#A59982] lg:text-base">
+          <p className="w-full max-w-[650px] font-inter text-sm font-[300] leading-[20px] tracking-[0.30px] text-[#000] lg:text-base">
             From grill to plate, Nostimo serves high-quality, made-to-order
             dishes crafted just for you. Step through our doors and be
             transported to Greece, where every bite, authentic music, and the

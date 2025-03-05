@@ -7,15 +7,13 @@ import Review from "@/app/about-us/(section)/Review";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
-const page = ({ }) => {
+const page = ({}) => {
   return (
     <main className="relative flex h-full w-full">
-      <div className="flex h-full w-full flex-col items-center justify-center bg-[#050505]">
+      <div className="flex h-full w-full flex-col items-center justify-center bg-[#FFF]">
         <Navbar position="absolute" />
         <Hero />
         <BavetteStory />
-        <OurTeam />
-        <OurManagement />
         <JoinUs />
         <Review />
         <Footer />
