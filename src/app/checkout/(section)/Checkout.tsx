@@ -112,93 +112,88 @@ const Checkout = () => {
                 checkDeliveryTime();
             }, 300000);
 
-            return () => clearInterval(interval);
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [restaurant?.takeAwayWindow]);
-    useEffect(() => {
-        let totalcharge = 0;
-        restaurant?.charges.map((charge) => {
-            if (charge.isActive) {
-                if (charge?.orderType === "2" && checkoutType !== "delivery") {
-                    return (totalcharge += 0);
-                }
-                if (charge?.orderType === "3" && checkoutType !== "pickup") {
-                    return (totalcharge += 0);
-                }
-                if (charge.isPercentage) {
-                    return (totalcharge += (cartValue() * charge?.value) / 100);
-                } else {
-                    return (totalcharge += charge?.value);
-                }
-            }
-        });
-        setTotalCharges(totalcharge);
-    }, [restaurant?.charges, cartValue, checkoutType]);
-    return (
-        <section className="flex h-full w-full items-center justify-center bg-menubackground">
-            <div className="flex h-full w-full max-w-[1300px] flex-col gap-[2.5rem] px-3 pb-[2.5rem] pt-3 md:pt-[2.5rem]">
-                <div className="flex flex-col gap-3 lg:flex-row lg:justify-between lg:gap-28">
-                    <Tabs value={checkoutType} className="flex w-full flex-col gap-4 lg:w-2/3">
-                        <Button className="hidden w-fit gap-2 p-0 text-lg font-[500] tracking-[1px] text-menusecondary md:flex" onClick={() => router.push("/menu")} variant="link">
-                            <MoveLeft /> <span>Back to Menu</span>
-                        </Button>
-                        <div className="flex w-full flex-col gap-3 border-b-[2px] border-borderinput py-3 pb-5 lg:flex-row lg:items-center lg:justify-between">
-                            <p className="text-xl font-semibold text-menusecondary">{checkoutType === "delivery" ? "Delivery" : "Pickup"} Details</p>
-                            <TabsList className="flex h-fit w-fit gap-1 rounded-full bg-tabbg px-1 py-1">
-                                {restaurant?.isTakeAwayEnabled && (
-                                    <TabsTrigger
-                                        value="pickup"
-                                        className="rounded-full bg-transparent px-4 py-3 text-sm font-semibold text-menusecondary data-[state=active]:bg-menuprimary data-[state=active]:text-menusecondary"
-                                        onClick={() => {
-                                            setCheckoutType("pickup");
-                                            localStorage.setItem("orderType", (3).toString());
-                                        }}
-                                    >
-                                        Pickup
-                                    </TabsTrigger>
-                                )}
-                                {restaurant?.isDeliveryEnabled && (
-                                    <TabsTrigger
-                                        value="delivery"
-                                        className="rounded-full bg-transparent px-4 py-3 text-sm font-semibold text-menusecondary data-[state=active]:bg-menuprimary data-[state=active]:text-menusecondary"
-                                        onClick={() => {
-                                            setCheckoutType("delivery");
-                                            localStorage.setItem("orderType", (2).toString());
-                                        }}
-                                    >
-                                        Delivery
-                                    </TabsTrigger>
-                                )}
-                            </TabsList>
-                        </div>
-                        <TabsContent value="pickup">
-                            {!restaurant?.isTakeAwayEnabled ? (
-                                <p>Pickup is unavailable at the moment.</p>
-                            ) : !isPickupNow ? (
-                                <p>Pickup is unavailable at the moment.</p>
-                            ) : restaurant?.minimumCollectionOrderAmount &&
-                                restaurant?.minimumCollectionOrderAmount > cartValue() + calculateServiceCharge(cartValue(), restaurant?.serviceCharge ?? 0) ? (
-                                <p>Your basket is just under &nbsp; £{restaurant?.minimumCollectionOrderAmount}. Why not try something new from our delicious offerings?</p>
-                            ) : (
-                                <Pickup />
-                            )}
-                        </TabsContent>
-                        <TabsContent value="delivery">
-                            {!restaurant?.isDeliveryEnabled ? (
-                                <p>Delivery is unavailable at the moment.</p>
-                            ) : !isDeliveryNow ? (
-                                <p>Delivery is unavailable at the moment.</p>
-                            ) : restaurant?.minimumDeliveryOrderAmount &&
-                                restaurant?.minimumDeliveryOrderAmount > cartValue() + calculateServiceCharge(cartValue(), restaurant?.serviceCharge ?? 0) ? (
-                                <p>
-                                    Your order must total at least &nbsp; £{restaurant?.minimumDeliveryOrderAmount}. Why not have another look and add a few more tempting treats?
-                                </p>
-                            ) : (
-                                <Delivery />
-                            )}
-                        </TabsContent>
-                    </Tabs>
+      return () => clearInterval(interval);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [restaurant?.takeAwayWindow]);
+
+  return (
+    <section className="flex h-full w-full items-center justify-center">
+      <div className="flex h-full w-full max-w-[1300px] flex-col gap-[2.5rem] px-3 pt-3 md:pt-[2.5rem] pb-[2.5rem]">
+        <div className="flex flex-col gap-3 lg:flex-row lg:justify-between lg:gap-28">
+          <Tabs
+            defaultValue="pickup"
+            className="flex w-full flex-col gap-4 lg:w-2/3"
+          >
+            <Button
+              className="w-fit p-0 text-[#FBEAD2] text-lg font-[500] tracking-[1px] hidden md:flex gap-2"
+              onClick={() => router.push('/menu')}
+              variant="link"
+            >
+              <MoveLeft /> <span>Back to Menu</span>
+            </Button>
+            <div className="flex w-full flex-col gap-3 border-b-[2px] border-[#131313] py-3 pb-5 lg:flex-row lg:items-center lg:justify-between">
+              <p className="text-xl font-semibold text-[#7A7875]">
+                {checkoutType === "delivery" ? "Delivery" : "Pickup"} Details
+              </p>
+              <TabsList className="flex h-fit w-fit gap-1 rounded-full bg-[#161616] px-1 py-1">
+                <TabsTrigger
+                  value="pickup"
+                  className="rounded-full bg-transparent px-4 py-3 text-sm font-semibold text-gray-300 data-[state=active]:bg-primary data-[state=active]:text-gray-300"
+                  onClick={() => setCheckoutType("pickup")}
+                >
+                  Pickup
+                </TabsTrigger>
+                {/* <TabsTrigger
+                  value="delivery"
+                  className="rounded-full bg-transparent px-4 py-3 text-sm font-semibold text-gray-300 data-[state=active]:bg-primary data-[state=active]:text-gray-300"
+                  onClick={() => setCheckoutType("delivery")}
+                >
+                  Delivery
+                </TabsTrigger> */}
+              </TabsList>
+            </div>
+            <TabsContent value="pickup">
+              {!restaurant?.isTakeAwayEnabled ? (
+                <p>Pickup is unavailable at the moment.</p>
+              ) : !isPickupNow ? (
+                <p>Pickup is unavailable at the moment.</p>
+              ) : restaurant?.minimumCollectionOrderAmount &&
+                restaurant?.minimumCollectionOrderAmount >
+                cartValue() +
+                calculateServiceCharge(
+                  cartValue(),
+                  restaurant?.serviceCharge ?? 0,
+                ) ? (
+                <p>
+                  The total amount must be greater than{" "}
+                  {restaurant?.minimumCollectionOrderAmount}.
+                </p>
+              ) : (
+                <Pickup />
+              )}
+            </TabsContent>
+            <TabsContent value="delivery">
+              {!restaurant?.isDeliveryEnabled ? (
+                <p>Delivery is unavailable at the moment.</p>
+              ) : !isDeliveryNow ? (
+                <p>Delivery is unavailable at the moment.</p>
+              ) : restaurant?.minimumDeliveryOrderAmount &&
+                restaurant?.minimumDeliveryOrderAmount >
+                cartValue() +
+                calculateServiceCharge(
+                  cartValue(),
+                  restaurant?.serviceCharge ?? 0,
+                ) ? (
+                <p>
+                  The total amount must be greater than{" "}
+                  {restaurant?.minimumDeliveryOrderAmount}.
+                </p>
+              ) : (
+                <Delivery />
+              )}
+            </TabsContent>
+          </Tabs>
 
                     <div className="mb-16 flex w-full flex-col justify-end gap-3 md:mb-0 lg:w-1/3 lg:flex-row">
                         <div className="flex h-fit w-full flex-col gap-7 rounded-md md:border-[2px] md:border-borderinput md:px-4 md:py-5">
@@ -273,38 +268,21 @@ const Checkout = () => {
                       >
                         <Trash2 className="text-[#bc995d]" />
                       </Button> */}
-                                        </div>
-                                    ))}
-                                </div>
-                                <div className="flex flex-col gap-4 pt-6">
-                                    <p className="text-lg font-light text-menuprimary-foreground">Rewards & promos</p>
-                                    <div className="flex flex-col gap-1">
-                                        <div className="flex gap-2">
-                                            <Input
-                                                placeholder="Gift or discount code"
-                                                onChange={(e) => {
-                                                    setCoupon(e.target.value);
-                                                }}
-                                                className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-borderinput bg-inputbg outline-none placeholder:text-placeholder focus-visible:border-b-[2px] focus-visible:border-b-menuprimary focus-visible:ring-0"
-                                            />
-                                            <Button
-                                                className="h-12 bg-menuprimary text-menuforeground hover:bg-buttonhover"
-                                                type="button"
-                                                onClick={() => {
-                                                    if (Coupon.length > 0) {
-                                                        setCoupon("");
-                                                    }
-                                                    setCouponApply(true);
-                                                }}
-                                            >
-                                                Apply
-                                            </Button>
-                                        </div>
-                                        {couponApply && <p className="w-full text-start text-xs text-red-700">The Coupon Code is Invalid</p>}
-                                    </div>
-                                    {/* <div className="flex justify-between">
-                    <p className="text-sm font-semibold text-menusecondary">Service Charge</p>
-                    <p className="text-lg font-semibold text-menusecondary">
+                    </div>
+                  ))}
+                </div>
+                <div className="flex flex-col gap-4 pt-6">
+                  <p className="text-lg font-light">Rewards & promos</p>
+                  <div className="flex gap-2">
+                    <Input
+                      placeholder="Gift or discount code"
+                      className="h-12 rounded-none border-b-[3px] border-l-0 border-r-0 border-t-0 border-b-[#323232] placeholder:text-menuprimary-foreground bg-[#0c0c0c] outline-none focus-visible:border-b-[2px] focus-visible:border-b-[#bc995d] focus-visible:ring-0"
+                    />
+                    <Button className="h-12">Apply</Button>
+                  </div>
+                  <div className="flex justify-between">
+                    <p className="text-sm font-semibold">Service Charge</p>
+                    <p className="text-lg font-semibold">
                       {getCurrencySymbol("GBP")}{" "}
                       {calculateServiceCharge(
                         cartValue(),
