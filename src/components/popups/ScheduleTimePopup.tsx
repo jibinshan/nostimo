@@ -100,7 +100,7 @@ const ScheduleTImePopup: FC<ScheduleTImePopupProps> = ({ children, setScheduleTi
             <DialogTrigger asChild>{children}</DialogTrigger>
             <DialogContent className="flex max-w-[525px] flex-col gap-6 border-[1px] border-borderinput bg-menubackground">
                 <DialogHeader>
-                    <DialogTitle className="text-menusecondary">Schedule &nbsp; {orderType}</DialogTitle>
+                    <DialogTitle className="text-menusecondary">Schedule pick - Up</DialogTitle>
                 </DialogHeader>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="flex w-full flex-col gap-3">
@@ -117,11 +117,9 @@ const ScheduleTImePopup: FC<ScheduleTImePopupProps> = ({ children, setScheduleTi
                                         >
                                             {timeslot?.map((time) => (
                                                 <FormItem className="flex items-center justify-between space-y-0" key={time}>
-                                                    <Label className="w-11/12 text-base font-semibold text-menusecondary" htmlFor={time}>
-                                                        {time}
-                                                    </Label>
+                                                    <Label className="text-base font-semibold text-menusecondary">{time}</Label>
                                                     <FormControl>
-                                                        <RadioGroupItem value={time} className="border-menuprimary" id={time} />
+                                                        <RadioGroupItem value={time} className="border-menuprimary" />
                                                     </FormControl>
                                                 </FormItem>
                                             ))}
@@ -135,7 +133,7 @@ const ScheduleTImePopup: FC<ScheduleTImePopupProps> = ({ children, setScheduleTi
                         <div className="flex w-full flex-col justify-end gap-2">
                             <Button
                                 type="button"
-                                className="bg-menuprimary text-base font-medium leading-[80%] text-menuforeground hover:bg-buttonhover"
+                                className="text-base font-medium leading-[80%] bg-menuprimary text-menuforeground hover:to-buttonhover"
                                 onClick={() => {
                                     setScheduleTime({
                                         time: form.watch("time"),
@@ -146,12 +144,7 @@ const ScheduleTImePopup: FC<ScheduleTImePopupProps> = ({ children, setScheduleTi
                             >
                                 Schedule
                             </Button>
-                            <Button
-                                type="button"
-                                variant="outline"
-                                onClick={() => setOpen(false)}
-                                className="border-menuprimary text-menuprimary hover:bg-menuprimary hover:text-menuforeground"
-                            >
+                            <Button type="button" variant="outline" onClick={() => setOpen(false)} className="border-menuprimary bg-transparent text-menuprimary hover:bg-menuprimary hover:text-menuforeground">
                                 Cancel
                             </Button>
                         </div>

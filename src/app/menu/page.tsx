@@ -8,7 +8,7 @@ export default function MenuPage() {
       <div className="hidden w-full justify-center md:flex">
         <Navbar position="static" />
       </div>
-      <div className="hidden w-full items-center justify-center md:flex">
+      <div className="hidden w-full items-center justify-center pt-8 md:flex">
         <Menu />
       </div>
       <div className="flex w-full items-center justify-center md:hidden">
