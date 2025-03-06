@@ -32,9 +32,9 @@ const Menu: React.FC = () => {
           <div className="flex flex-col gap-5 lg:gap-8">
             <div className="flex flex-row items-center gap-8">
               <p className="flex flex-col font-marcellus text-base font-[400] text-[#000] lg:text-lg">
-                Cake Sweet{" "}
+              Pork Yeeros{" "}
                 <span className="text-sm lg:text-base">
-                  Bite Lorem ipsum dolor, feugiat decilata
+                Served With Mixed Salad, Chips, Pitta & Tzatziki
                 </span>
               </p>
               <Image
@@ -45,14 +45,14 @@ const Menu: React.FC = () => {
                 className="hidden lg:block"
               />
               <span className="font-inter text-base font-[600] text-[#000] lg:text-lg">
-                25.00$
+                17.00$
               </span>
             </div>
             <div className="flex flex-row items-center gap-8">
               <p className="flex flex-col font-marcellus text-base font-[400] text-[#000] lg:text-lg">
-                Cake Sweet{" "}
+              Chicken Yeeros{" "}
                 <span className="text-sm lg:text-base">
-                  Bite Lorem ipsum dolor, feugiat decilata
+                Served With Mixed Salad, Chips & Signature Sauce
                 </span>
               </p>
               <Image
@@ -63,14 +63,14 @@ const Menu: React.FC = () => {
                 className="hidden lg:block"
               />
               <span className="font-inter text-base font-[600] text-[#000] lg:text-lg">
-                25.00$
+                17.00$
               </span>
             </div>
             <div className="flex flex-row items-center gap-8">
               <p className="flex flex-col font-marcellus text-base font-[400] text-[#000] lg:text-lg">
-                Cake Sweet{" "}
+              Mixed Pork & Chicken Yeeros{" "}
                 <span className="text-sm lg:text-base">
-                  Bite Lorem ipsum dolor, feugiat decilata
+                Served With Mixed Salad, Chips, Pitta & Tzatziki
                 </span>
               </p>
               <Image
@@ -81,14 +81,14 @@ const Menu: React.FC = () => {
                 className="hidden lg:block"
               />
               <span className="font-inter text-base font-[600] text-[#000] lg:text-lg">
-                25.00$
+                17.00$
               </span>
             </div>
             <div className="flex flex-row items-center gap-8">
               <p className="flex flex-col font-marcellus text-base font-[400] text-[#000] lg:text-lg">
-                Cake Sweet{" "}
+              Lamb Chops{" "}
                 <span className="text-sm lg:text-base">
-                  Bite Lorem ipsum dolor, feugiat decilata
+                Served With Mixed Salad, Chips, Pitta & Tzatziki
                 </span>
               </p>
               <Image
@@ -99,14 +99,14 @@ const Menu: React.FC = () => {
                 className="hidden lg:block"
               />
               <span className="font-inter text-base font-[600] text-[#000] lg:text-lg">
-                25.00$
+                23.00$
               </span>
             </div>
             <div className="flex flex-row items-center gap-8">
               <p className="flex flex-col font-marcellus text-base font-[400] text-[#000] lg:text-lg">
-                Cake Sweet{" "}
+              Pork Sausages(2pcs){" "}
                 <span className="text-sm lg:text-base">
-                  Bite Lorem ipsum dolor, feugiat decilata
+                Served With Mixed Salad, Chips, Pitta & Tzatziki
                 </span>
               </p>
               <Image
@@ -117,7 +117,7 @@ const Menu: React.FC = () => {
                 className="hidden lg:block"
               />
               <span className="font-inter text-base font-[600] text-[#000] lg:text-lg">
-                25.00$
+                16.90$
               </span>
             </div>
           </div>

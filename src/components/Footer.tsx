@@ -63,7 +63,7 @@ const Footer = ({}) => {
           </Button>
         </div>
         <div className="flex flex-row items-center justify-center gap-4">
-          <Link href={"#"}>
+          <Link href="https://www.instagram.com/nostimo.london/?hl=en">
             <Image
               src="/images/footer/insta.svg"
               width={42}
@@ -72,7 +72,7 @@ const Footer = ({}) => {
               className="w-14"
             />
           </Link>
-          <Link href={"#"}>
+          <Link href="https://www.tripadvisor.com/Restaurant_Review-g186338-d21318441-Reviews-Nostimo-London_England.html">
             <Image
               src="/images/footer/view.svg"
               width={42}
@@ -81,7 +81,7 @@ const Footer = ({}) => {
               className="w-14"
             />
           </Link>
-          <Link href={"#"}>
+          <Link href="https://g.co/kgs/bMqkgi9">
             <Image
               src="/images/footer/google.svg"
               width={42}
@@ -90,7 +90,7 @@ const Footer = ({}) => {
               className="w-14"
             />
           </Link>
-          <Link href={"#"}>
+          <Link href='https://www.facebook.com/nostimo.london/'>
             <Image
               src="/images/footer/fb.svg"
               width={42}
@@ -106,7 +106,7 @@ const Footer = ({}) => {
           </h5>
           <div className="flex flex-col items-center justify-center gap-3">
             <p className="text-center font-marcellus text-lg font-[400] tracking-[0.96px] text-[#000]">
-              020 8802 5585
+             +44 20 8378 2077
             </p>
             <p className="text-center font-marcellus text-base font-[400] tracking-[0.96px] text-[#000]">
               OR

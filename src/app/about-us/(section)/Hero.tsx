@@ -1,33 +1,18 @@
 import Image from "next/image";
 
-const Hero = ({}) => {
+const Hero = ({ }) => {
   return (
     <section id="hero" className="flex w-full items-center justify-center">
       <div className="relative flex min-h-[100vh] w-full items-center justify-center">
-        <div className="flex w-full flex-col gap-6 px-4 lg:flex-row lg:gap-0 lg:px-0">
-          <div className="flex w-full items-center justify-center lg:w-1/2">
-            <div className="mt-20 flex flex-col items-start gap-6 lg:mt-0 lg:w-8/12">
-              <h1 className="font-oswald text-5xl font-semibold leading-[66px] text-[#4197D4] lg:text-6xl">
-                Welcome to
-                <br /> Istanbul - Where
-                <br /> Every Bite is an
-                <br /> Art Form
-              </h1>
-              <p className="font-manrope font-normal text-[#000]">
-                Indulge in the finest cuts, masterfully prepared to perfection.
-                At Istanbul, we don`t just serve steak—we serve an experience.
-                Savor the richness, embrace the flavor, and discover the steak
-                you`ve been waiting for.
-              </p>
+        <div className="w-full flex flex-col lg:flex-row px-4 lg:px-0 gap-6 lg:gap-0">
+          <div className="w-full lg:w-1/2 flex justify-center items-center">
+            <div className="flex flex-col gap-6 items-start lg:w-8/12 mt-20 lg:mt-0">
+              <h1 className="font-oswald text-[#4197d4] leading-[66px] font-semibold text-5xl lg:text-6xl">Welcome to Nostimo – Where Every Bite is a Taste of Greece</h1>
+              <p className="text-black font-manrope font-normal">Indulge in the authentic flavors of Greece, masterfully prepared with passion and tradition. At Nostimo, we don’t just serve food—we offer an experience. From perfectly grilled souvlaki to rich, hearty moussaka, every dish is a celebration of Mediterranean heritage. Savor the freshness, embrace the flavors, and discover the true essence of Greek cuisine.</p>
             </div>
           </div>
-          <div className="flex w-full flex-col items-center justify-center gap-6 lg:w-1/2">
-            <Image
-              src="/images/about-us/hero.png"
-              width={951}
-              height={975}
-              alt="hero"
-            />
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center gap-6">
+            <Image src='/images/about-us/hero.png' width={951} height={975} alt="hero" className="max-h-[700px] object-cover"/>
           </div>
         </div>
       </div>

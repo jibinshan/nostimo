@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Hello: React.FC = () => {
@@ -28,26 +29,30 @@ const Hello: React.FC = () => {
                 <h6 className="text-center font-inter text-sm font-[500] capitalize tracking-[0.70px] text-[#979695] lg:text-base lg:leading-[80%]">
                   Booking request
                 </h6>
-                <p className="text-center font-inter text-base font-[400] text-[#000] lg:text-lg">
-                  0207 052 4471 <br />
-                  info@nurcafe.co.uk
-                </p>
+                <div className="flex flex-col">
+                <Link href='tel:+44 20 8378 2077' className="text-center font-inter text-base font-[400] text-[#000] lg:text-lg">
+                  +44 20 8378 2077
+                </Link>
+                <Link href='mailto:info@nostimo.london' className="text-center font-inter text-base font-[400] text-[#000] lg:text-lg">
+                info@nostimo.london
+                </Link>
+                </div>
               </div>
               <div className="flex flex-col gap-3">
                 <h6 className="text-center font-inter text-sm font-[500] capitalize tracking-[0.70px] text-[#979695] lg:text-base lg:leading-[80%]">
                   Location{" "}
                 </h6>
-                <p className="text-center font-inter text-sm font-[400] text-[#000] lg:text-base">
-                  45 Deansgate, Manchester, United <br /> Kingdom, M3 2AY.
-                </p>
+                <Link href='https://maps.app.goo.gl/jiPd8jyuXNAkNFQn6' className="text-center font-inter text-sm font-[400] text-[#000] lg:text-base">
+                  71 Golders Green Rd, <br />London NW11 8EL, United Kingdom
+                </Link>
               </div>
               <div className="flex flex-col gap-3">
                 <h6 className="text-center font-inter text-sm font-[500] capitalize tracking-[0.70px] text-[#979695] lg:text-base lg:leading-[80%]">
                   Opening Hours{" "}
                 </h6>
                 <p className="text-center font-inter text-sm font-[400] text-[#000] lg:text-base">
-                  Monday–Friday: 8:00 AM – 10:00 PM <br />
-                  Saturday–Sunday: 9:00 AM – 11:00 PM
+                  Monday to Friday : 07:00 AM to 10:00 PM<br />
+                  Saturday & Sunday : 08:00 AM to 10:00 PM
                 </p>
               </div>
             </div>

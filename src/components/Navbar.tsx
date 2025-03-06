@@ -33,7 +33,7 @@ const Navbar = ({
     <nav
       className={cn(
         `${position} top-5 z-50 flex h-[10vh] w-full items-center bg-transparent p-4 px-4 transition-all duration-300 ease-in-out md:px-[50px] lg:px-[80px]`,
-        pathname !== "/" && "bg-[#fff]",
+        pathname !== "/" && "bg-[#fff] top-0",
       )}
     >
       <div className="flex h-full w-full flex-row items-center justify-between">
