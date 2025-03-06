@@ -176,7 +176,7 @@ const Contact = ({}) => {
                               <Input
                                 placeholder="First Name"
                                 {...field}
-                                className="h-12 rounded-xl bg-[#4197D4] placeholder:text-[#fff]"
+                                className="h-12 rounded-xl bg-[#F2EFE8] text-black placeholder:text-[#000]"
                               />
                             </FormControl>
                             <FormMessage />
@@ -192,7 +192,7 @@ const Contact = ({}) => {
                               <Input
                                 placeholder="Phone"
                                 {...field}
-                                className="h-12 rounded-xl bg-[#4197D4] placeholder:text-[#fff]"
+                                className="h-12 rounded-xl bg-[#F2EFE8] text-black placeholder:text-[#000]"
                               />
                             </FormControl>
                             <FormMessage />
@@ -208,7 +208,7 @@ const Contact = ({}) => {
                               <Input
                                 placeholder="Email"
                                 {...field}
-                                className="h-12 rounded-xl bg-[#4197D4] placeholder:text-[#fff]"
+                                className="h-12 rounded-xl bg-[#F2EFE8] text-black placeholder:text-[#000]"
                               />
                             </FormControl>
                             <FormMessage />
@@ -227,7 +227,7 @@ const Contact = ({}) => {
                               <Textarea
                                 placeholder="Your Message"
                                 {...field}
-                                className="h-32 rounded-xl bg-[#4197D4] placeholder:text-[#fff]"
+                                className="h-32 rounded-xl bg-[#F2EFE8] text-black placeholder:text-[#000]"
                               />
                             </FormControl>
                             <FormMessage />
