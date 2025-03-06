@@ -71,7 +71,7 @@ const Contact = ({}) => {
       className="flex h-full w-full flex-col items-center justify-center bg-[#fff]"
       id="contact"
     >
-      <div className="flex h-full w-full max-w-[1300px] flex-col gap-[2.5rem] px-0 py-12 pl-0 md:px-2 md:py-24">
+      <div className="flex h-full w-full max-w-[1300px] flex-col gap-[2.5rem] px-0 py-12 pl-0 md:px-2 md:py-12">
         <div className="flex w-full flex-col lg:flex-row">
           <div className="flex w-full flex-col gap-8 bg-[#] px-6 lg:w-1/2 lg:px-28">
             <div className="flex flex-col gap-8">
@@ -92,16 +92,15 @@ const Contact = ({}) => {
                 </div>
                 <div className="flex flex-col gap-4">
                   <Link
-                    href="https://maps.app.goo.gl/RcUh1as5zsmZng1AA"
+                    href="https://maps.app.goo.gl/jiPd8jyuXNAkNFQn6"
                     target="_blank"
                   >
                     <p className="text-[#000]">
-                      45 Deansgate, Manchester M3
-                      <br /> 2AY, United Kingdom
+                    71 Golders Green Rd, <br />London NW11 8EL, United Kingdom
                     </p>
                   </Link>
                   <Link
-                    href="https://maps.app.goo.gl/RcUh1as5zsmZng1AA"
+                     href="https://maps.app.goo.gl/jiPd8jyuXNAkNFQn6"
                     target="_blank"
                   >
                     <p className="flex items-center gap-2 text-sm">
@@ -111,16 +110,16 @@ const Contact = ({}) => {
                   </Link>
                 </div>
               </div>
-              {/* <div className="flex items-center gap-6">
+              <div className="flex items-center gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full p-2">
-                    <Phone />
+                    <Phone className="text-[#000]"/>
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="tel:+441234567890" className="">+44 1234 567890</Link>
+                  <Link href="tel:+441234567890" className="text-black">+44 1234 567890</Link>
                 </div>
-              </div> */}
+              </div>
               <div className="flex items-center gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full p-2">
@@ -128,36 +127,36 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4 text-[#000]">
-                  <Link href="mailto:info@nurcafe.co.uk" className="">
-                    info@nurcafe.co.uk
+                  <Link href="mailto:info@nostimo.london" className="">
+                  info@nostimo.london
                   </Link>
                 </div>
               </div>
               <div className="flex items-center justify-start gap-4">
                 <Link
-                  href="https://www.instagram.com/nurcafemcr/?hl=en"
+                  href="https://www.instagram.com/nostimo.london/?hl=en"
                   target="_blank"
                   className="text-[#000]"
                 >
                   <Icons.instagram />
                 </Link>
                 <Link
-                  href="https://www.tripadvisor.com/Restaurant_Review-g187069-d28003565-Reviews-Nur_Cafe-Manchester_Greater_Manchester_England.html"
+                  href="https://www.tripadvisor.com/Restaurant_Review-g186338-d21318441-Reviews-Nostimo-London_England.html"
                   target="_blank"
                   className="text-[#000]"
                 >
                   <Icons.unknown />
                 </Link>
                 <Link
-                  href="https://g.co/kgs/eEdUrdK"
+                  href="https://g.co/kgs/bMqkgi9"
                   className="text-[#000]"
                   target="_blank"
                 >
                   <Icons.google />
                 </Link>
-                {/* <Link href='https://www.facebook.com/Istanbulwoolton/'>
+                <Link href='https://www.facebook.com/nostimo.london/'>
                   <Icons.facebook />
-                </Link> */}
+                </Link>
               </div>
             </div>
           </div>
@@ -238,7 +237,7 @@ const Contact = ({}) => {
                   </div>
                   <div className="flex w-full flex-col pt-7 lg:flex-row">
                     <Button
-                      className="font-bai w-full rounded-2xl bg-[#4197D4] py-6 hover:bg-secondary"
+                      className="font-bai w-full rounded-2xl bg-[#4197D4] py-6"
                       disabled={bookTableMutation.isPending}
                     >
                       Contact US
@@ -250,27 +249,13 @@ const Contact = ({}) => {
           </div>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.1787275755482!2d-2.2461876!3d53.483136300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb100499bf4a9%3A0xd83801f7a87ef198!2zTsO5ciBjYWZl!5e0!3m2!1sen!2sin!4v1734633617051!5m2!1sen!2sin"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.7697109007327!2d-0.1986855!3d51.5724551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876115aae32217f%3A0x550971cc142ad643!2sNostimo!5e0!3m2!1sen!2sin!4v1738185780589!5m2!1sen!2sin"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="h-[500px] w-full"
         ></iframe>
-      </div>
-      <div className="flex w-full overflow-hidden">
-        <Image
-          src="/images/home/herobottom.png"
-          alt="bottom"
-          width={966}
-          height={96}
-        />
-        <Image
-          src="/images/home/herobottom.png"
-          alt="bottom"
-          width={966}
-          height={96}
-        />
       </div>
     </section>
   );

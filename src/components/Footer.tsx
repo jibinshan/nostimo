@@ -29,7 +29,7 @@ const Footer = ({}) => {
               variant="link"
               className="text-center font-playfair text-base font-[400] capitalize tracking-[1px] text-[#000] lg:text-lg"
             >
-              <Link href="/">Menu</Link>
+              <Link href="/menu">Menu</Link>
             </Button>
           </div>
           <Button
@@ -37,7 +37,7 @@ const Footer = ({}) => {
             variant="link"
             className="text-center font-playfair text-base font-[400] capitalize tracking-[1px] text-[#000] lg:text-lg"
           >
-            <Link href="/">ABOUT</Link>
+            <Link href="/about-us">About</Link>
           </Button>
 
           <Button
@@ -45,21 +45,21 @@ const Footer = ({}) => {
             variant="link"
             className="text-center font-playfair text-base font-[400] capitalize tracking-[1px] text-[#000] lg:text-lg"
           >
-            <Link href="/">Gallery</Link>
+            <Link href="/gallery">Gallery</Link>
           </Button>
-          <Button
+          {/* <Button
             asChild
             variant="link"
             className="text-center font-playfair text-base font-[400] capitalize tracking-[1px] text-[#000] lg:text-lg"
           >
             <Link href="/">FOOD & DRINK</Link>
-          </Button>
+          </Button> */}
           <Button
             asChild
             variant="link"
             className="text-center font-playfair text-base font-[400] capitalize tracking-[1px] text-[#000] lg:text-lg"
           >
-            <Link href="/">CONTACT US</Link>
+            <Link href="/contact">Contact</Link>
           </Button>
         </div>
         <div className="flex flex-row items-center justify-center gap-4">

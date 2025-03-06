@@ -74,7 +74,7 @@ const Navbar = ({
                         "border-r-0 border-r-transparent py-7",
                     )}
                   >
-                    <Link href="/">Menu</Link>
+                    <Link href="/menu">Menu</Link>
                   </Button>
                   <Button
                     asChild
@@ -85,7 +85,7 @@ const Navbar = ({
                         "border-r-0 border-r-transparent py-7",
                     )}
                   >
-                    <Link href="/">ABOUT</Link>
+                    <Link href="/about-us">ABOUT</Link>
                   </Button>
                   <Button
                     asChild
@@ -96,9 +96,9 @@ const Navbar = ({
                         "border-r-0 border-r-transparent py-7",
                     )}
                   >
-                    <Link href="/">CULINARY GALLERY</Link>
+                    <Link href="/gallery">CULINARY GALLERY</Link>
                   </Button>
-                  <Button
+                  {/* <Button
                     asChild
                     variant="link"
                     className={cn(
@@ -108,7 +108,7 @@ const Navbar = ({
                     )}
                   >
                     <Link href="/">CONTACT US</Link>
-                  </Button>
+                  </Button> */}
                   <Button
                     asChild
                     variant="link"
@@ -118,7 +118,7 @@ const Navbar = ({
                         "border-r-0 border-r-transparent py-7",
                     )}
                   >
-                    <Link href="/">Contact</Link>
+                    <Link href="/contact">Contact</Link>
                   </Button>
                 </div>
                 <div>
@@ -130,7 +130,7 @@ const Navbar = ({
                       pathname !== "/" && "py-7",
                     )}
                   >
-                    <Link href="/">book table</Link>
+                    <Link href="/table-booking">book table</Link>
                   </Button>
                 </div>
               </div>
